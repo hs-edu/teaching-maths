@@ -1,0 +1,276 @@
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace, mathrsfs}
+\usepackage{amsmath,amsthm,amssymb,amsfonts, color, hyperref, graphicx}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+% design question/answer space
+\setlength\linefillheight{.25in}
+%\definecolor{FillWithLinesColor}{gray}{0.8}
+\newcommand{\sol}[1]{\color{gray}\fillwithlines{#1}\color{black}}
+
+%Shortcut symbols
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\e}[1]{\,\mathrm{e}^{#1}}
+%\newcommand{\ln}[1]{\mathrm{ln}( #1 )}
+ 
+\newenvironment{problem}[2][Problem:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{claim}[2][Claim:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{defn}[2][Definition:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Core Mathematics C3 Advanced}
+\newcommand{\term}{Winter 2016}
+\newcommand{\examnum}{C3 Chapter 1 to 4}
+\newcommand{\examdate}{10/10/16}
+\newcommand{\timelimit}{60 minutes}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum}{\examdate}
+\runningheadrule
+\firstpagefooter{}{}{}
+\runningfooter{}{}{Page \thepage\ of \numpages}
+\runningfootrule
+
+ % set up the frontpage header
+\begin{flushright}
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} & Parent: & \makebox[2in]{\hrulefill}\\
+\textbf{\examdate} &&\\
+\textbf{Time Limit: \timelimit} & Teacher & \makebox[2in]{\hrulefill}
+\end{tabular*}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{2pt}
+
+
+
+
+\begin{minipage}[t]{3.7in}
+\vspace{0pt}
+\begin{itemize}
+
+\item \textbf{DO NOT open the exam booklet until you are told to begin. You should write your name at the top and read the instructions.}
+
+\vfill
+
+\item Organize your work, in a reasonably neat and coherent way, in
+the space provided. If you wish for something to not be graded, please strike it out neatly. I will grade only work on the exam paper, unless you clearly indicate your desire for me to grade work on additional pages.
+
+\item You may use any results from class, homework or the text, but you must cite the result you are using. You must prove everything else.
+
+\item You needn't spend your time rewriting definitions or axioms on the exam.
+
+\item 
+%You may use the text, my class notes and/or any notes and study guides you have created.
+Candidates may use any \textbf{calculator} allowed by the regulations of the Joint
+Council for Qualifications. Calculators must not have the facility for symbolic
+algebra manipulation or symbolic differentiation/integration, or have
+retrievable mathematical formulae stored in them.
+
+\end{itemize}
+
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{2.3in}
+\vspace{0pt}
+%\cellwidth{3em}
+\gradetablestretch{2}
+%Uncomment this line to make the table display 100 as the total no matter what. This is good for tests with an ommit question.
+%\settabletotalpoints{100}
+%\vqword{Problem}
+\addpoints % required here by exam.cls, even though questions haven't started yet.	
+\gradetable[v][questions]  % Use [pages] to have grading table by page instead of question
+
+\end{minipage}
+
+\begin{itemize}
+\item
+There are \numquestions\ questions in this question paper. The total mark for this paper is \numpoints.
+There are \numpages\ pages in this question paper. 
+
+
+
+\item When you have completed your test, hand it to me and go have a great week!
+
+%\item There is a single bonus problem at the end of the test. It would be best to work first on the main test as this problem is only worth 5 points and will be graded strictly.
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%									%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%		QUESTIONS Start Now			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%									%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage 
+\begin{questions}
+\addpoints
+%%% QUESTION %%%
+\question[3] 
+Use algebraic long division to divide \(x^3 + 2x^2 - x + 19\) by \(x+4\).
+\sol{\fill}
+
+%%% QUESTION %%%
+\question[4] 
+Write \(2x^3 + 8x^2 + 7x + 8\) in the form \( (A x^2 + B x +C)(x+3) + D\).
+Using your answer, state the result when \(2x^3 + 8x^2 + 7x + 8\) is divided by \((x+3)\).
+\sol{\fill}
+
+\newpage 
+\addpoints
+
+%%% QUESTION %%%
+\question 
+	Here is a map, \[f(x) = \frac{5}{2x+1}\]
+\begin{parts}
+\part[2] 
+	Evaluate \(f(0)\) and \(f(\frac{1}{2})\).
+\part[3] 
+	Draw the mapping diagram for the domain \( \{x \in \mathbb{N}, x<6\}\) and list the range.
+\part[2] 
+	Is the map a function for the domain \(x \in \mathbb{Z}\), why?
+\part[2] 
+	Is the map a function for the domain \(x \in \mathbb{R}\), why?
+\end{parts}
+\sol{2in}
+\vfill
+\sol{2.5 in}
+
+\newpage 
+\addpoints
+
+%%% QUESTION %%%
+\question
+\begin{parts}
+\part[2]
+	Sketch the graph of the function
+	\[
+	f(x) =
+	\begin{cases}
+		x^2 - 2 & -2 < x<2 \\
+	    2 & \text{otherwise}
+	\end{cases}
+	\]
+\part[2]
+	State the range of the function.
+\end{parts}
+\vfill
+\sol{\fill}
+\newpage
+\addpoints
+
+%%% Question %%%
+\question
+	\[
+	f(x) = x+4, \text{  and  } g(x)=\frac{3}{x+1}, \, x>0 
+	\]
+\begin{parts}
+\part[1]
+	Find \(f^{-1}(x)\).
+\part[2]
+	Find \(g^{-1}(x)\).
+\part[2]
+	\(f^{-1}g^{-1}(x)\).
+\part[2]
+	Find \(gf(x)\).
+\part[2]
+	Find the inverse of \(gf(x)\). What do you notice?
+\end{parts}
+\sol{\fill}
+
+\newpage
+\addpoints
+
+%%% Question %%%
+\question
+Sketch the graphs of the following, labelling key points and asymptotes:
+\begin{parts}
+\part[3]
+	\(y = 2 - 4\e{x+1}\)
+\part[3]
+	\(y = \ln{(x+5)} + 1\)
+\end{parts}
+\vfill
+
+\newpage
+\addpoints
+
+%%% Question %%%
+\question
+Solve the following equations, giving your solutions as exact values:
+\begin{parts}
+\part[3]
+	\(2\ln{x} - \ln{(2x)} = 2\)
+\part[3]
+	\(\e{8x}-\e{4x}-6=0\)
+\end{parts}
+\sol{\fill}
+
+\newpage
+\addpoints
+
+%%% Question %%%
+\question
+	The graph of the function:
+	\[
+    y=\sin{3x} + 3x, \quad 0<x<\pi
+    \]
+    meets the line \( y=1 \) when \(x=a\).
+\begin{parts}
+\part[4]
+	Show that \(0.1<a<0.2\).
+\part[2]
+	Show that the equation:
+    \[
+    \sin{3x} + 3x = 1
+    \]
+    can be written as:
+    \[
+    x=\frac{1}{3}(1-\sin{3x})
+    \]
+\part[2]
+	Starting with \(x_0 = 0.2\), use the iteration:
+    \[
+    x_{n+1}=\frac{1}{3}(1-\sin{3x_n})
+    \]
+    to find \(x_4\) to 3 d.p.
+\part[3]
+	Use a suitable interval to verify that your answer to part (c) is correct to 3 decimal places.
+\end{parts}
+\sol{\fill}
+
+\end{questions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%									%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%		QUESTIONS End Now			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%									%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
